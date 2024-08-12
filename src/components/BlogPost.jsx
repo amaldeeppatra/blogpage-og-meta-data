@@ -23,8 +23,8 @@ const BlogPost = ({ blogPosts }) => {
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.content.substring(0, 100)} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`http://yourwebsite.com/post/${post.id}`} />
-        <meta property="og:image" content={`http://yourwebsite.com/images/${post.id}.jpg`} />
+        <meta property="og:url" content={`https://blogpage-og-meta-data.vercel.app/post/${post.id}`} />
+        <meta property="og:image" content={`somecuteimage.jpg`} />
       </Helmet>
       <h2>{post.title}</h2>
       <p>{post.content}</p>
