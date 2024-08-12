@@ -19,7 +19,7 @@ const BlogPost = ({ blogPosts }) => {
       <Helmet>
         <title>{post.title}</title>
         <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={description} />
+        <meta property="og:description" content={post.content} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://blogpage-og-meta-data.vercel.app/post/${post.id}`} />
         <meta property="og:image" content={`https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_48x48.png`} />
